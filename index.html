@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ReactOS in the Browser</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>ReactOS Emulator (Upload ISO)</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>ReactOS in Your Browser</h1>
-  <p>This demo runs ReactOS from an ISO file using WebAssembly (v86).</p>
-  <div id="status">Loading...</div>
+  <p>Select your own ISO or IMG file to boot ReactOS.</p>
+
+  <input type="file" id="file-input" accept=".iso,.img" />
+  <div id="status">Waiting for file...</div>
   <div id="screen" style="width: 800px; height: 600px; background: black;"></div>
 
   <script src="https://copy.sh/v86/build/libv86.js"></script>
