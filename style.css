@@ -1,11 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #eee;
+  background: #f0f0f0;
   text-align: center;
-  margin-top: 20px;
+  padding: 20px;
 }
 
 #screen {
   margin: 20px auto;
-  border: 2px solid #333;
+  border: 2px solid #444;
 }
